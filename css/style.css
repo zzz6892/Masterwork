@@ -172,9 +172,9 @@ img.img-curve:hover {
     position: relative;
     padding: 25px 40px 10px 20px;
     border: 1px solid #eee;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 40px;
     border-radius: 6px;
-    background: #fff;
+    background: #f7f9fc;
 }
 
 .w3l-faq-block .w3l-faq ul li {
