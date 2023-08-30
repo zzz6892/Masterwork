@@ -181,3 +181,33 @@ img.img-curve:hover {
     animation: all 1s ease ease-in-out;
 }
 /* end FAQ */
+
+/* nếu có viết css thì viết tiếp ở đây */
+
+
+
+
+/* strat backtotop */
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: #dc4f72;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #dc4f72;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+} 
+/* end backToTop  */
