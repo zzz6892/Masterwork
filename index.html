@@ -48,19 +48,69 @@
   </head>
 
   <body>
-    <header class="main-header fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
-          <h1>
-            <a class="navbar-brand text-center" href="https://wp.w3layouts.com/masterwork/">
-              <span>
-                <i class="fa fa-handshake"></i>
-                Masterwork
-              </span>
-            </a>
-          </h1>
+    <header id="side-header" class="main-header d-grid bg-black align-items-center p-0">
+      <div class="container d-flex justify-content-around align-items-center">
+        <div class="logo w-50 p-5">
+          <a class="fs-3 fw-bolder" style="text-decoration: none" href="https://wp.w3layouts.com/masterwork/">
+            <i class="fa fa-handshake"></i>
+            <span>Masterwork</span>
+          </a>
+        </div>
 
-          <button
+        <nav class="menu w-50">
+          <ul class="d-flex justify-content-around align-items-center" style="list-style: none" >
+            <li>
+              <a href="https://wp.w3layouts.com/masterwork/#close" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+              <i class="fa fa-angle-down fs-6"></i>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="search-right d-inline-grid align-items-center mr-lg-3">
+          <a href="#search">
+            <span>
+              <i class="fa fa-search fs-5 text-white text-center " aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <div id="search" class="pop-overlay">
+            <div class="popup">
+              <form
+                action="https://wp.w3layouts.com/masterwork/"
+                method="GET"
+                class="search-box d-sm-flex"
+              >
+                <input
+                  type="search"
+                  placeholder="Enter Keyword"
+                  name="s"
+                  required="required"
+                  autofocus=""
+                />
+                <button type="submit" class="btn">Search</button>
+              </form>
+              <a class="close" href="#close">X</a>
+            </div>
+        </div>
+
+
+
+        
+        
+
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -70,84 +120,30 @@
             aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
-          </button>
+            
+          </button> -->
 
-          <div class="collapse navbar-collapse" id="navbar-content">
-            <ul id="primary-menu" class="navbar-nav ml-lg-auto">
-              <li class="menu-item1">
-                <a class="nav-link active" aria-current="page" href="https://wp.w3layouts.com/masterwork/">Home</a
-                >
-              </li>
-
-              <li class="menu-item2">
-                <a class="nav-link" href="#">About</a>
-              </li>
-
-              <li class="menu-item3">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-
-              <li class="menu-item3">
-                <a class="nav-link" href="#">Pages</a>
-                <i class="fa fa-angle-down"></i>
-              </li>
-
-              <li class="nav-item4">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-
-            <div class="search-right mr-lg-3">
-              <a href="#search">
-                <span>
-                  <i class="fa fa-search"></i>
-                </span>
-              </a>
 
               <!-- search popup  -->
-              <!-- <div id="search" class="pop-overlay">
-                <div class="popup">
-                  <form
-                    action="https://wp.w3layouts.com/masterwork/"
-                    method="GET"
-                    class="search-box d-sm-flex"
-                  >
-                    <input
-                      type="search"
-                      placeholder="Enter Keyword"
-                      name="s"
-                      required="required"
-                      autofocus=""
-                    />
-                    <button type="submit" class="btn">Search</button>
-                  </form>
-                  <a class="close" href="#close">×</a>
-                </div>
-<<<<<<< HEAD
-              </div> -->
-=======
-              </div>
->>>>>>> 5b77fea068a1ef19589a57429e46235551d9a1f2
-            </div>
+              
 
             <button class="btn btn-outline-success" type="submit">
               SCHEDELU A DEMO
             </button>
+            
           </div>
-        </nav>
       </div>
-       
-      <!-- </div> -->
+
+
+        
     </header>
 
     <section class="FAQS">
       <div class="w3l-faq-block py-5">
         <div class="container lg-5 pageFaq">
           <div class="header-section text-center mx-auto">
-            <h6 class="sub-title">
-              Questions and Answers      </h6>
-            <h3>
-              General FAQs      </h3>
+            <h6 class="sub-title">Questions and Answers</h6>
+            <h3>General FAQs</h3>
             <p class="my-3">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.      </p>
           </div>
@@ -165,8 +161,7 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        There are many passages but the majority?                </h2>
+                      <h2>There are many passages but the majority?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
@@ -174,8 +169,7 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        Sed ut perspiciatis unde omnis?                </h2>
+                      <h2>Sed ut perspiciatis unde omnis?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
@@ -183,8 +177,7 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        At vero eos iusto odio ducimus qui?                </h2>
+                      <h2>At vero eos iusto odio ducimus qui?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
@@ -192,8 +185,7 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        We denounce with righteous?                </h2>
+                      <h2>We denounce with righteous?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
@@ -201,8 +193,7 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        perspiciatis unde omnis?                </h2>
+                      <h2>perspiciatis unde omnis?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
@@ -210,15 +201,13 @@
                     <li>
                       <input type="checkbox" checked="">
                       <i class="fa fa-angle-down"></i>
-                      <h2>
-                        At vero eos iusto odio ducimus qui?                </h2>
+                      <h2>At vero eos iusto odio ducimus qui?</h2>
                       <p>Voluptates amet earum velit nobis aliquam
                         laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
                         non assumenda, incidunt officiis eaque iste minima autem.</p>
                     </li>
                   </ul>
                 </div>
-              </section>
             </div>
           </div>
         </div>
