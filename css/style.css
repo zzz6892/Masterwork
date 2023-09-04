@@ -10,12 +10,36 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
-.container {
+.main-header .container{
+    padding: 0 25px;
+    margin: 0 auto;
     max-width: 100%;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+.logo a {
+    color: #dc4f72;
+}
+
+.menu ul {
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+a.active {
+    color: #dc4f72;
+}
+
+.menu i {
+    color: #fff;
+}
+
+.search-right {
+    grid-template-columns: auto 1fr;
 }
 
 .section {
@@ -26,6 +50,24 @@ header.main-header {
     display: grid;
     background-color: #ffffff;
 }
+.search-right i {
+    width: 40px;
+    height: 40px;
+   border-radius: 50%;
+   background-color: transparent;
+   border-color: #fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 /* start FAQS */
 .header-section {
@@ -54,10 +96,10 @@ ol, ul {
     box-sizing: border-box;
 }
 
-.header-section {
+/* .header-section {
     max-width: 750px;
     margin: auto;
-}
+}*/
 
 .header-section h3 {
     color: #2c3038;
@@ -369,50 +411,6 @@ body button, .btn, body a {
     text-transform: uppercase;
 }
 
-button, .btn, select {
-    cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-}
-
-.btn-outline-primary {
-    color: #dc4f72;
-    border-color: #dc4f72;
-}
-
-a {
-    background-color: transparent;
-}
-
-a, a:hover {
-    text-decoration: none;
-}
-
-a {
-    color: #dc4f72;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.btn:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: #dc4f72;
-    border-color: #dc4f72;
-}
-
-.col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-img.img-curve {
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
 
 /* strat backtotop */
 .backToTop {
