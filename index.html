@@ -1,361 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MasterWork</title>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MasterWork</title>
 
-    <!-- google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
-    <link rel="stylesheet" href="./js/slick/slick-theme.css " />
+  <!-- google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- fancybox -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+  <link rel="stylesheet" href="./js/slick/slick-theme.css " />
 
-    <!-- animate  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- animate  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <body>
-    <header id="side-header" class="main-header d-grid bg-black align-items-center p-0">
-      <div class="container d-flex justify-content-around align-items-center">
-        <div class="logo w-50 p-5">
-          <a class="fs-3 fw-bolder" style="text-decoration: none" href="https://wp.w3layouts.com/masterwork/">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header id="side-header" class="main-header d-grid align-items-center p-0 fixed-top">
+    <div class="container justify-content-around align-items-center">
+      <nav class="navbar navbar-expand-lg p-0 px-0 pt-lg-0">
+
+        <div class="logo">
+          <a class="navbar-brand fw-bolder m-0 p-0" href="https://wp.w3layouts.com/masterwork/">
             <i class="fa fa-handshake"></i>
             <span>Masterwork</span>
           </a>
         </div>
 
-        <nav class="menu w-50">
-          <ul class="d-flex justify-content-around align-items-center" style="list-style: none" >
-            <li>
-              <a href="https://wp.w3layouts.com/masterwork/#close" class="active">Home</a>
+        <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="true" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+
+        <div id="navbar-content" class="navbar-collapse collapse show align-items-center">
+          <ul id="primary-menu" class="navbar-nav d-flex pl-0 mb-0">
+            <li id="menu-item1"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item1 nav-item active">
+              <a href="https://wp.w3layouts.com/masterwork/#close" class="nav-link active">Home</a>
             </li>
-            <li>
-              <a href="#">About</a>
+
+            <li id="menu-item2" class="menu-item menu-item-type-post_type menu-item-object-page menu-item2 nav-item">
+              <a href="#" class="nav-link">About</a>
             </li>
-            <li>
-              <a href="#">Services</a>
+
+            <li id="menu-item3" class="menu-item menu-item-type-post_type menu-item-object-page menu-item3 nav-item">
+              <a href="#" class="nav-link">Services</a>
             </li>
-            <li>
-              <a href="#">Pages</a>
-              <i class="fa fa-angle-down fs-6"></i>
+
+            <li id="menu-item4"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item4 nav-item dropdown">
+              <a href="#" class="nav-link data-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link4"
+                aria-haspopup="true" aria-expanded="false">Pages</a>
+              <!-- <i class="fa fa-angle-down fs-6"></i> -->
+
+              <div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link4">
+                <a href="#" class="dropdown-item" id="menu-item6">Blog Posts</a>
+                <a href="#" class="dropdown-item" id="menu-item7">Landing page</a>
+                <a href="#" class="dropdown-item" id="menu-item8">404 page</a>
+              </div>
+
+            <li id="menu-item5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item5 nav-item">
+              <a href="#" class="nav-link">Contact</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
             </li>
-          </ul>
-        </nav>
+        </div>
+
+
+        </ul>
 
         <div class="search-right d-inline-grid align-items-center mr-lg-3">
-          <a href="#search">
-            <span>
-              <i class="fa fa-search fs-5 text-white text-center btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-hidden="true"></i>
-            </span>
+          <!-- nút search -->
+          <a href="#search" class="search-search" title="search">
+            <span class="fa fa-search" aria-hidden="true"></span>
           </a>
 
-          <div id="search" class="pop-overlay">
+          <!-- search popup -->
+          <div id="search" class="pop-overlay w-100 h-100">
             <div class="popup">
-              <form
-                action="https://wp.w3layouts.com/masterwork/"
-                method="GET"
-                class="search-box d-sm-flex"
-              >
-                <input
-                  type="search"
-                  placeholder="Enter Keyword"
-                  name="s"
-                  required="required"
-                  autofocus=""
-                />
+              <form action="https://wp.w3layouts.com/masterwork/" method="GET" class="search-box d-sm-flex">
+                <input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus="">
                 <button type="submit" class="btn">Search</button>
               </form>
-              <a class="close" href="#close">X</a>
+              <a class="close" href="#close">x</a>
             </div>
+          </div>
+
+          <div class="top-quote mr-lg-3 mt-lg-0">
+            <a class="btn btn-outline-primary theme-button" href="#">SCHEDULE A DEMO</a>
+          </div>
+
+          <!-- theme dark, light -->
+          <div class="mobile-position DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper d-flex align-items-center">
+                <label class="theme-switch d-inline-block position-relative m-0" for="checkbox">
+                  <input class="d-none" type="checkbox" id="checkbox">
+                  <div class="mode-container p-0">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header-fixed-space-height"></div>
+
+  <div class="w3l-index1">
+    <div class="content">
+      <style>
+        .content {
+
+          background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
+            url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg);
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          background-repeat: no-repeat,
+            no-repeat,
+            no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;
+          display: grid;
+          align-items: center;
+          padding-top: 5rem;
+        }
+      </style>
+
+      <div class="container HomePageHeroHeader">
+        <div class="row align-items-center">
+          <div class="col-lg-6 content-left">
+            <h3>
+              We Execute Our Ideas From Start to Finish</h3>
+            <p class="mt-3 mb-lg-5 mb-4">
+              Building a beautiful interactive business for startups and innovative companies. </p>
+            <a href="#url" class="btn btn-outline-primary theme-button">Get Started</a>
+          </div>
+          <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/main.png"
+              class="img-fluid" alt="main image">
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="w3l-index2 py-5">
+    <div class="container py-md-3 HPWCU">
+      <div class="header-section text-center mx-auto">
+        <h6 class="sub-title">
+          Why Choose Us </h6>
+        <h3>
+          Tools for business startup to professional </h3>
+        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="row bottom_grids text-center justify-content-center">
+
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s1.png" alt=""
+                class="img-fluid">
+              <h3 class="my-3">
+                Interactive </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis? </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s2.png" alt=""
+                class="img-fluid">
+              <h3 class="my-3">
+                Business </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis? </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-5">
+          <div class="s-block">
+            <a href="#service" class="d-block">
+              <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/s3.png" alt=""
+                class="img-fluid">
+              <h3 class="my-3">
+                Inspiration </h3>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis? </p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="FAQS">
+    <div class="w3l-faq-block py-5">
+      <div class="container lg-5 pageFaq">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">Questions and Answers</h6>
+          <h3>General FAQs</h3>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 mt-5">
+          <div class="faq-image">
+            <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/women.jpg"
+              class="img-fluid shadow img-curve" alt="">
+          </div>
+        </div>
+        <div class="col-md-7 mt-5 pl-md-5">
+          <section class="w3l-faq" id="faq">
+            <div class="faq-page">
+              <ul>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>There are many passages but the majority?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>Sed ut perspiciatis unde omnis?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>We denounce with righteous?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>perspiciatis unde omnis?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked="">
+                  <i class="fa fa-angle-down"></i>
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
+                  <p>Voluptates amet earum velit nobis aliquam
+                    laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis
+                    sapiente
+                    non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="Products">
+    <div class="w3l-products py-5 mb-4">
+      <div class="container py-lg-3 HomepageProjects">
+        <div class="header-section text-center mx-auto">
+          <h6 class="sub-title">
+            Featured Cases </h6>
+          <h3>
+            Completed Projects </h3>
+          <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-10 mx-auto">
+            <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px;">
+              <ul class="resp-tabs-list hor_1">
+                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab"
+                  style="background-color: white; border-color: rgb(193, 193, 193);">
+                  Project One</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab"
+                  style="background-color: rgb(245, 245, 245);">
+                  Project Two</li>
+                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab"
+                  style="background-color: rgb(245, 245, 245);">
+                  Project Three</li>
+                <div class="clear"></div>
+              </ul>
+              <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
+                <h2 class="resp-accordion hor_1 resp-tab-active" role="tab" aria-controls="hor_1_tab_item-0"
+                  style="background: none; border-color: rgb(193, 193, 193);">
+                  <span class="resp-arrow"></span>
+                  Project One
+                </h2>
+                <div class="products-content resp-tab-content hor_1 resp-tab-content-active"
+                  aria-labelledby="hor_1_tab_item-0" style="display:block">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>
+                        Why a visual identity system is more memorable </h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                        quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                        modi ipsum natus accusantium sit pariatur. </p>
+                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                        Know more</a>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
+                        class="img-fluid img-curve" alt="project image">
+                    </div>
+                  </div>
+                </div>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
+                  style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                  <span class="resp-arrow"></span>
+                  Project Two
+                </h2>
+                <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1"
+                  style="border-color: rgb(193, 193, 193);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
+                        class="img-fluid img-curve" alt="project image">
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <h3>
+                        Make website that looks Lorem, ipsum dolor. </h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                        quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                        modi ipsum natus accusantium sit pariatur. </p>
+                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                        Know more</a>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-2"
+                  style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                  <span class="resp-arrow"></span>
+                  Project Three
+                </h2>
+                <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2"
+                  style="border-color: rgb(193, 193, 193);">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>
+                        Why a visual identity system is more memorable </h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla
+                        quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur
+                        modi ipsum natus accusantium sit pariatur. </p>
+                      <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                        Know more</a>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
+                        class="img-fluid img-curve" alt="project image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section></section>
+
+  <section></section>
+
+  <footer></footer>
+
+  <!-- MODAL  -->
+  <div class="modal" id="#exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
 
+        <a href="#" class="backToTop cd-top text-replace js-cd-top">
+          <i class="fa fa-angle-up"></i>
+        </a>
 
-        
-        
+        <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>
 
-          <!-- <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="modal" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+        <script src="./js/slick/slick.min.js"></script>
 
-            <span class="navbar-toggler-icon"></span>
-            
-          </button> -->
+        <script>
+          $(document).ready(function () {
+            $(".service_slider").slick({
+              // setting-name: setting-value
+              Infinity: true,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false,
+            });
+          });
+        </script>
 
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script>
+          Fancybox.bind('[data-fancybox="gallery"]', {
+            // Your custom options
+          });
+        </script>
 
-              <!-- search popup  -->
-              
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+          integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/countup/jquery.countup.js"></script>
+        <script>
+          $(".counter").countUp();
+        </script>
 
-            <button class="btn btn-outline-success" type="submit">
-              SCHEDELU A DEMO
-            </button>
-            
-          </div>
-      </div>
+        <script src="./js/backToTop/util.js"></script>
+        <script src="./js/backToTop/main.js"></script>
 
+        <script src="./js/wow/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+</body>
 
-        
-    </header>
-
-    <div class="header-fixed-space-height"></div>
-
-    <section class="FAQS">
-      <div class="w3l-faq-block py-5">
-        <div class="container lg-5 pageFaq">
-          <div class="header-section text-center mx-auto">
-            <h6 class="sub-title">Questions and Answers</h6>
-            <h3>General FAQs</h3>
-            <p class="my-3">
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.      </p>
-          </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5 mt-5">
-              <div class="faq-image">
-                <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/women.jpg" class="img-fluid shadow img-curve" alt="">
-              </div>
-            </div>
-            <div class="col-md-7 mt-5 pl-md-5">
-              <section class="w3l-faq" id="faq">
-                <div class="faq-page">
-                  <ul>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>There are many passages but the majority?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>Sed ut perspiciatis unde omnis?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>At vero eos iusto odio ducimus qui?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>We denounce with righteous?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>perspiciatis unde omnis?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                    <li>
-                      <input type="checkbox" checked="">
-                      <i class="fa fa-angle-down"></i>
-                      <h2>At vero eos iusto odio ducimus qui?</h2>
-                      <p>Voluptates amet earum velit nobis aliquam
-                        laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                        non assumenda, incidunt officiis eaque iste minima autem.</p>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="Products">
-      <div class="w3l-products py-5 mb-4">
-        <div class="container py-lg-3 HomepageProjects">
-            <div class="header-section text-center mx-auto">
-      <h6 class="sub-title">
-        Featured Cases      </h6>
-      <h3>
-        Completed Projects      </h3>
-      <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-        Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-            </div>
-            <div class="row mt-5">
-      <div class="col-lg-10 mx-auto">
-        <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px;">
-          <ul class="resp-tabs-list hor_1">
-            <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="background-color: white; border-color: rgb(193, 193, 193);">
-              Project One</li>
-            <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="background-color: rgb(245, 245, 245);">
-              Project Two</li>
-            <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="background-color: rgb(245, 245, 245);">
-              Project Three</li>
-            <div class="clear"></div>
-          </ul>
-          <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
-            <h2 class="resp-accordion hor_1 resp-tab-active" role="tab" aria-controls="hor_1_tab_item-0" style="background: none; border-color: rgb(193, 193, 193);">
-              <span class="resp-arrow"></span>
-              Project One            </h2>
-              <div class="products-content resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>
-                    Why a visual identity system is more memorable                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.                  </p>
-                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">
-                    Know more</a>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-5">
-                  <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg" class="img-fluid img-curve" alt="project image">
-                </div>
-              </div>
-            </div>
-            <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
-              <span class="resp-arrow"></span>
-              Project Two            </h2>
-              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193);">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg" class="img-fluid img-curve" alt="project image">
-                </div>
-                <div class="col-md-6 mt-md-0 mt-5">
-                  <h3>
-                    Make website that looks Lorem, ipsum dolor.                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.                  </p>
-                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">
-                    Know more</a>
-                </div>
-              </div>
-            </div>
-            <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-2" style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
-              <span class="resp-arrow"></span>
-              Project Three            </h2>
-              <div class="products-content resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2" style="border-color: rgb(193, 193, 193);">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>
-                    Why a visual identity system is more memorable                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.                  </p>
-                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">
-                    Know more</a>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-5">
-                  <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg" class="img-fluid img-curve" alt="project image">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section></section>
-
-    <section></section>
-    
-    <section></section>
-
-    <section></section>
-
-    <footer></footer>
-
-    <a href="#" class="backToTop cd-top text-replace js-cd-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-
-    <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>
-
-    <script src="./js/slick/slick.min.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".service_slider").slick({
-          // setting-name: setting-value
-          Infinity: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-        });
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-      Fancybox.bind('[data-fancybox="gallery"]', {
-        // Your custom options
-      });
-    </script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/countup/jquery.countup.js"></script>
-    <script>
-      $(".counter").countUp();
-    </script>
-
-    <script src="./js/backToTop/util.js"></script>
-    <script src="./js/backToTop/main.js"></script>
-
-    <script src="./js/wow/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
 </html>
